@@ -4,8 +4,8 @@ app = Flask(__name__)
 import requests
 import json
 
-client_id='d832ae3f1f1f448bbb8bc1ba6e6e1f1e'
-client_secret="a7f815325e9748f9b1b8cf6a2469cea1"
+client_id='client_id'
+client_secret="secret"
 
 @app.route('/authorize-instagram')
 def authorize_instagram():

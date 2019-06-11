@@ -15,12 +15,12 @@ from urllib.parse import urlparse
 datas ={} 
 url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token='
 token = ''
-client_id = '579d7f9b6c0748b4a7466f9d47ba9dce'
-client_secret='f10d124543824e05921b76f967c4f9ae'
+client_id = 'your clid'
+client_secret='yout secret'
 
 
 
-# access token : 325402641.1677ed0.b6ff4a39711d42c3992145aa76fb910d
+
 
 
 
@@ -29,7 +29,7 @@ client_secret='f10d124543824e05921b76f967c4f9ae'
 @app.route("/")
 def index():
     if token == '':
-        return redirect("https://api.instagram.com/oauth/authorize/?client_id=579d7f9b6c0748b4a7466f9d47ba9dce&redirect_uri=http://localhost:5000/callback&response_type=code")
+        return redirect("https://api.instagram.com/oauth/authorize/?client_id=clinent_id&redirect_uri=http://localhost:5000/callback&response_type=code")
     else:
         return render_template('home.html',datas=datas)
     
